@@ -5,21 +5,21 @@
 class Arcsii < Formula
   desc "Beautiful terminal-based code architecture visualizer with ASCII art"
   homepage "https://github.com/barisercan/arcsii"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/barisercan/arcsii/releases/download/v0.1.0/arcsii_0.1.0_darwin_amd64.tar.gz"
-      sha256 "201b3bd21da95285b43df3b0ce48d80fff046dbf2c093e5707e21435253a4c5e"
+      url "https://github.com/barisercan/arcsii/releases/download/v0.2.0/arcsii_0.2.0_darwin_amd64.tar.gz"
+      sha256 "df004b677e9a67bf7746782665eaedf09f9f81f49a6c78fe2d55eb2448e7cca0"
 
       def install
         bin.install "arcsii"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/barisercan/arcsii/releases/download/v0.1.0/arcsii_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ffe018cec67f63c72051f37cdbcd8de78e1b35c5c738efb4c3a04f98ba94896a"
+      url "https://github.com/barisercan/arcsii/releases/download/v0.2.0/arcsii_0.2.0_darwin_arm64.tar.gz"
+      sha256 "4a066491536a3df82ba4ec340f099a4dd09541e4d74bea76ed098e8e2c92c919"
 
       def install
         bin.install "arcsii"
@@ -29,15 +29,15 @@ class Arcsii < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/barisercan/arcsii/releases/download/v0.1.0/arcsii_0.1.0_linux_amd64.tar.gz"
-      sha256 "cd012f5ba22b3872fb9db63b77834c56aa493cb246fe7f09e646cffc1a62db92"
+      url "https://github.com/barisercan/arcsii/releases/download/v0.2.0/arcsii_0.2.0_linux_amd64.tar.gz"
+      sha256 "dfe34385afba0984759ebe2224743cf49902f9949b490a90183414ba8b97af87"
       def install
         bin.install "arcsii"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/barisercan/arcsii/releases/download/v0.1.0/arcsii_0.1.0_linux_arm64.tar.gz"
-      sha256 "eb590f15250fb0f0115a5017c55f1572162f5ee51d7c0cb81116d77e57bd8c47"
+      url "https://github.com/barisercan/arcsii/releases/download/v0.2.0/arcsii_0.2.0_linux_arm64.tar.gz"
+      sha256 "c374e9b7906c019053d89d3541accfdb7ebe0dc405e9294bd1d6413bed5a398f"
       def install
         bin.install "arcsii"
       end
