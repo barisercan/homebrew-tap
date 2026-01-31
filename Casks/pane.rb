@@ -11,10 +11,6 @@ cask "pane" do
 
   app "Pane.app"
 
-  postflight do
-    system_command "/usr/bin/open", args: ["-a", "Pane"]
-  end
-
   zap trash: [
     "~/Library/Preferences/com.ercanbaris.Pane.plist",
   ]
