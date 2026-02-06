@@ -1,6 +1,6 @@
 cask "pane" do
-  version "1.1.0"
-  sha256 "95d112bc56e7c3a7f785400397025fd6f09e60fa36d16b291ca198da8a6772a7"
+  version "1.1.1"
+  sha256 "3551588421606f5b6ed53d4dece481396c4b092ddd2eb5f64fbd35d0de01d7ee"
 
   url "https://github.com/barisercan/Pane/releases/download/v#{version}/Pane.zip"
   name "Pane"
